@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <>
         <CurrentWeather />
-        <GlobalStyle />
+        <GlobalStyle suppressMultiMountWarning />
       </>
     )
   }

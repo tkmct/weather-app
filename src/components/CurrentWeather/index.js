@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
-export default () => {
-  const city = useState('Tokyo')
+const CurrentWeather = () => {
+  const [city] = useState('Tokyo')
 
   return (
     <div>
@@ -9,3 +9,5 @@ export default () => {
     </div>
   )
 }
+
+export default CurrentWeather
