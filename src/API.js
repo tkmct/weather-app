@@ -1,7 +1,7 @@
 export const fetchWeather = () => {
-  fetch(
-    `api.openweathermap.org/data/2.5/weather?q=London&apiid=${
-      process.env.API_ID
+  return fetch(
+    `http://api.openweathermap.org/data/2.5/weather?q=London&APIID=${
+      process.env.API_KEY
     }`
   )
     .then(res => res.json())

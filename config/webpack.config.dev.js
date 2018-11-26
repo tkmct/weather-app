@@ -14,6 +14,7 @@ const ManifestPlugin = require('webpack-manifest-plugin')
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin-alt')
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter')
+const DotenvPlugin = require('dotenv-webpack')
 
 const publicPath = '/'
 const publicUrl = ''
@@ -158,6 +159,7 @@ module.exports = {
       fileName: 'asset-manifest.json',
       publicPath: publicPath,
     }),
+    new DotenvPlugin({ path: './.env.development' }),
     useTypeScript &&
       new ForkTsCheckerWebpackPlugin({
         typescript: resolve.sync('typescript', {
