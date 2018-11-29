@@ -5,10 +5,10 @@ import CurrentWeather from './components/CurrentWeather'
 class App extends Component {
   render() {
     return (
-      <>
+      <div>
         <CurrentWeather />
         <GlobalStyle suppressMultiMountWarning />
-      </>
+      </div>
     )
   }
 }

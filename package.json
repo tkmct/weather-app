@@ -59,7 +59,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "mock": "json-server dev-data.json -d 1000 -p 3001"
+    "mock": "json-server dev-data.json -d 2000 -p 3001"
   },
   "browserslist": [
     ">0.2%",
