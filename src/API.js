@@ -1,9 +1,5 @@
 export const fetchWeather = () => {
-  return fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=London&APIID=${
-      process.env.API_KEY
-    }`
-  )
+  return fetch('http://localhost:3001/weather')
     .then(res => res.json())
     .then(data => data)
 }
