@@ -1,0 +1,12 @@
+{
+  "weather": [
+    {
+      "id": "tokyo",
+      "currentWeather": "rain"
+    },
+    {
+      "id": "california",
+      "currentWeather": "sunny"
+    }
+  ]
+}
