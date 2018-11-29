@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Suspense } from 'react'
 import GlobalStyle from './styles/global'
 import CurrentWeather from './components/CurrentWeather'
 
@@ -6,7 +6,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <CurrentWeather />
+        <Suspense maxDuration={1000}>
+          <CurrentWeather />
+        </Suspense>
         <GlobalStyle suppressMultiMountWarning />
       </div>
     )

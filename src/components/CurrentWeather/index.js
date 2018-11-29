@@ -10,7 +10,7 @@ const CurrentWeather = () => {
   return (
     <div>
       <h1>Current Weather of {city}</h1>
-      <Suspense fallback={'loading'}>
+      <Suspense fallback={'loading'} maxDuration={1000}>
         <CurrentWeatherContent />
       </Suspense>
     </div>
